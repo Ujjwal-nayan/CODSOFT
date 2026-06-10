@@ -1,0 +1,364 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaAI - The Future of Coding</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0b1120;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(11,17,32,0.9);
+    backdrop-filter:blur(12px);
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding-top:80px;
+    background:
+    radial-gradient(circle at top left,#1d4ed8 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#7c3aed 0%,transparent 35%);
+}
+
+.hero h1{
+    font-size:4rem;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#cbd5e1;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:35px;
+    font-size:1.1rem;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#38bdf8;
+    color:black;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.section{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:60px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#111827;
+    padding:30px;
+    border-radius:18px;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+}
+
+.stat{
+    text-align:center;
+    background:#111827;
+    padding:35px;
+    border-radius:18px;
+}
+
+.stat h2{
+    color:#38bdf8;
+    font-size:2.5rem;
+}
+
+.pricing{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.price-card{
+    background:#111827;
+    padding:35px;
+    border-radius:18px;
+    text-align:center;
+}
+
+.price{
+    font-size:3rem;
+    color:#38bdf8;
+    margin:20px 0;
+}
+
+.price-card ul{
+    list-style:none;
+    margin:25px 0;
+}
+
+.price-card li{
+    margin:10px 0;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    border-top:1px solid rgba(255,255,255,0.1);
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.7rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+.section-title{
+    font-size:2rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="container navbar">
+<div class="logo">NovaAI</div>
+
+<div class="nav-links">
+<a href="#features">Features</a>
+<a href="#stats">Stats</a>
+<a href="#pricing">Pricing</a>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Build Faster With AI Powered Development</h1>
+
+<p>
+NovaAI helps developers write code, detect bugs, learn DSA,
+and ship products faster than ever before.
+</p>
+
+<a href="#" class="btn">Start Free Trial</a>
+
+</div>
+
+</section>
+
+<section class="section" id="features">
+
+<div class="container">
+
+<h2 class="section-title">Features</h2>
+
+<div class="features">
+
+<div class="card">
+<h3>AI Code Review</h3>
+<p>Get instant feedback and improve code quality automatically.</p>
+</div>
+
+<div class="card">
+<h3>Bug Detection</h3>
+<p>Identify issues before deployment and reduce debugging time.</p>
+</div>
+
+<div class="card">
+<h3>DSA Mentor</h3>
+<p>Master algorithms and data structures with guided learning.</p>
+</div>
+
+<div class="card">
+<h3>Resume Analyzer</h3>
+<p>Improve your resume and boost your internship opportunities.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="stats">
+
+<div class="container">
+
+<h2 class="section-title">Trusted Worldwide</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2>100K+</h2>
+<p>Users</p>
+</div>
+
+<div class="stat">
+<h2>1M+</h2>
+<p>Code Reviews</p>
+</div>
+
+<div class="stat">
+<h2>99.9%</h2>
+<p>Uptime</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="pricing">
+
+<div class="container">
+
+<h2 class="section-title">Pricing</h2>
+
+<div class="pricing">
+
+<div class="price-card">
+<h3>Starter</h3>
+<div class="price">$0</div>
+
+<ul>
+<li>Basic AI Tools</li>
+<li>Limited Usage</li>
+<li>Email Support</li>
+</ul>
+
+<a href="#" class="btn">Get Started</a>
+</div>
+
+<div class="price-card">
+<h3>Pro</h3>
+<div class="price">$9</div>
+
+<ul>
+<li>Unlimited AI Access</li>
+<li>Advanced Analytics</li>
+<li>Priority Support</li>
+</ul>
+
+<a href="#" class="btn">Choose Plan</a>
+</div>
+
+<div class="price-card">
+<h3>Enterprise</h3>
+<div class="price">$29</div>
+
+<ul>
+<li>Team Collaboration</li>
+<li>Custom Integrations</li>
+<li>24/7 Support</li>
+</ul>
+
+<a href="#" class="btn">Contact Sales</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 NovaAI. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+```
